@@ -1,0 +1,71 @@
+/* Animation au chargement de la page */
+.card {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Effet de survol sur les cartes */
+.card {
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    transition: color 0.3s ease-in-out;
+}
+
+.card:hover .card-title {
+    color: #3b51d1 !important;
+}
+
+/* Bordure arrondie et ombre portée sur les cartes */
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Effet de parallaxe sur le titre */
+.parallax {
+    height: 300px;
+    /* background-image: url('https://via.placeholder.com/1920x1080'); */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+.parallax h2 {
+    font-size: 2rem;
+}
+
+/* Bouton "Voir plus" avec effet de survol */
+.btn-primary {
+    background-color: #21D192;
+    border-color: #21D192;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #1ba57e;
+    border-color: #1ba57e;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
